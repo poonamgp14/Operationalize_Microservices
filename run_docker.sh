@@ -16,4 +16,4 @@ docker image ls
 # http://0.0.0.0:80. But that message is coming from inside the container,
 # which doesn’t know you mapped to port 80 of that container to 4000,
 # making the URL http://localhost:4000
-docker run -p 8000:5001 machlearning
+docker run -p 8000:80 machlearning

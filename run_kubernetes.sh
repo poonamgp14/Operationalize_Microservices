@@ -8,7 +8,7 @@ dockerpath=docker.io/noduplicatesforme/machlearning
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment my-kubectl-app --image=docker.io/noduplicatesforme/machlearning:0.0.1
+kubectl create deployment my-kubectl-app --image=$dockerpath:0.0.1
 
 # Step 3:
 # List kubernetes pods
@@ -16,9 +16,9 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl expose deployment my-kubectl-app --type="NodePort" --port=8000 --target-port=5001
+kubectl expose deployment my-kubectl-app --type="NodePort" --port=8000 --target-port=80
 
 
-minikube service my-kubectl-app
+# minikube service my-kubectl-app
 
-kubectl logs <pod-name>
+# kubectl logs <pod-name>
