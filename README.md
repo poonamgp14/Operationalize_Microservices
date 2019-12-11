@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/poonamgp14/Operationalize_Microservices.svg?style=svg)](https://circleci.com/gh/poonamgp14/Operationalize_Microservices)
 
 ## Project Overview
 
